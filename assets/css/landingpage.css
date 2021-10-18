@@ -1,0 +1,257 @@
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Bahij-light;
+    src: url('../fonts/Bahij_TheSansArabic-Light.ttf');
+}
+@font-face {
+    font-family: Bahij-bold;
+    src: url('../fonts/Bahij_TheSansArabic-Bold.ttf');
+}
+@font-face {
+    font-family: Huriken;
+    src: url('../fonts/FontsFree-Net-Huriken-2.ttf');
+}
+button{
+    cursor: pointer;
+}
+body.bg-global{
+    background-image:url('../images/Group\ 1120.png') ;
+    background-size: cover;
+}
+.content{
+    padding:25px 40px;
+}
+#language{
+    float: right;
+    position: relative;
+    background: transparent;
+    border: none;
+    font-family: Bahij-bold;
+    font-size: 20px;
+    color: #540C6E;
+    cursor: pointer;
+    text-shadow: 0 3px 6px #ffffffde;
+}
+#language::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #540C6E;
+    top: 30px;
+    box-shadow: 0 3px 6px #ffffffde;
+}
+.title{
+    margin: 30px 0;
+    font-size: 28px;
+}
+.text-center{
+    text-align: center;
+}
+.title #init-title{
+    font-family: Bahij-light;
+    color: white;
+    font-size: 32px;
+    text-shadow: 0 3px 6px #ffffffde;
+}
+.title .init-mobile{
+    display: none;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-box{
+    width: 43%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+.text-box{
+    width: 50%;
+}
+.text-box .title{
+    color: #540C6E;
+    font-size: 91px;
+    margin: 0;
+    text-shadow: #FF02FFCC 0 0 8px;
+    font-family: Bahij-light;
+}
+.text-box .title span{
+    font-size: 65px;
+    color: #6C2585;
+}
+.text-box #subtitle,
+.text-box #subtitle2{
+    font-size: 30px;
+    color: white;
+    font-family: Bahij-bold;
+    text-shadow: 0 0 6px #ffffffa3;
+    margin-top: 10px;
+}
+.input-icons{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.input-icons input{
+    padding: 5px 20px 5px 60px;
+    text-align: center;
+    width: 88%;
+    border: none;
+    border: 3px solid #540C6E;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #fff;
+    font-size: 22px;
+    font-family: Bahij-light;
+}
+.input-icons .icon{
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    padding-right: 20px;
+    border-right: 1px solid #a5a5a5;
+}
+.input-icons .icon img{
+    width: 21px;
+    height: 30px;
+}
+.input-icons a{
+    display: block;
+    background-color: #4F0868;
+    padding: 0;
+    color: white;
+    border: none;
+    width: 88%;
+    margin: 30px auto 0 auto;
+    border-radius: 3px;
+    box-shadow: 0 0 8px #fff;
+    font-family: Bahij-bold;
+    font-size: 28px;
+    cursor: pointer;
+    text-decoration: none;
+}
+#paragraph{
+    margin-top: 30px;
+    color: white;
+    text-shadow: 0 0 6px #ffffffde;
+    font-family: Bahij-light;
+    font-size: 15px;
+}
+
+.check{
+    position: relative;
+}
+.check-icon img,
+.check .main-img{
+    display: block;
+    margin: auto;
+}
+.check .main-img{
+    opacity: 0.14;
+}
+.check-icon{
+    position: absolute;
+    top: 53px;
+}
+.check-icon.text-box{
+    width: 100%;
+}
+.check-icon .chek-icon-img{
+    margin-top: 20px;
+    margin-top: 33px;
+}
+
+
+@media screen and (max-width: 700px) {
+    body.bg-global{
+        background-position: center ;
+    }
+    .flex{
+        display: block;
+        margin-top: 40px;
+    }
+    .img-box{
+        width: 64%
+    }
+    .text-box{
+        width: 100%;
+    }
+    .input-icons a{
+        width: 100%;
+        font-size: 24px;
+    }
+    .input-icons input{
+        padding: 3px 20px 3px 45px;
+        font-size: 16px;
+    }
+    .input-icons .icon{
+        top: 7px;
+    }
+    .title #init-title{
+        display: none;
+    }
+    .init-mobile,
+    .check-title{
+        display: block !important;
+        font-size: 18px !important;
+        width: 88%;
+        margin: 1px auto;
+        text-shadow: 0 0 0 !important;
+    }
+    .check-title{
+        margin-top: 48px;
+    }
+    .text-box .title{
+        font-size: 50px;
+    }
+    .text-box .title span{
+        font-size: 40px;
+    }
+    .text-box #subtitle,
+    .text-box #subtitle2{
+        font-size: 24px;
+    }
+    .input-icons .icon {
+        top: 4px;
+        height: 28px;
+    }
+    .input-icons .icon img {
+        width: 18px;
+    }
+
+    .check-icon .chek-icon-img{
+        width: 34%;
+        margin-top: 0;
+    }
+    .check .main-img{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .text-box .title{
+        font-size: 55px;
+    }
+    .text-box .title span{
+        font-size: 45px;
+    }
+    .input-icons input{
+        font-size: 19px;
+    }
+    .input-icons .icon {
+        top: 7px;
+        height: 32px;
+    }
+    .input-icons .icon img {
+        width: 18px;
+    }
+
+    .check-icon .chek-icon-img {
+        margin-top: 37px;
+    }
+}
