@@ -99,7 +99,9 @@ body.bg-global{
 .operators{
     margin-top: 45px;
 }
-.operators button{
+.operators a{
+    text-align: center;
+    text-decoration: none;
     display: block;
     width: 100%;
     margin: 28px 0;
@@ -118,6 +120,9 @@ body.bg-global{
 }
 .operators #op3{
     background: linear-gradient(to left,#5CAC50, #16997D);
+}
+.operators #op4{
+    background: #E10A0A
 }
 
 @media screen and (max-width: 700px) {

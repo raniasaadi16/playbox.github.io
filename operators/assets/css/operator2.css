@@ -15,7 +15,7 @@ button{
     cursor: pointer;
 }
 body.bg-global{
-    background-image:url('../images/Group\ 1741.png') ;
+    background-image:url('../images/Mask\ Group\ 2.png') ;
     background-size: cover;
     height: 100vh;
 }
@@ -39,7 +39,7 @@ body.bg-global{
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #054864;
+    background-color: #006E85;
     top: 30px;
     box-shadow: 0 3px 6px #ffffffde;
 }
@@ -47,7 +47,7 @@ body.bg-global{
     text-align: center;
 }
 .bg-operators{
-    background: rgb(5, 72, 100, 0.7);
+    background: rgb(0, 110, 133, 0.85);
     padding: 30px 68px;
     width: 70%;
     border-radius: 5px;
@@ -55,6 +55,7 @@ body.bg-global{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    border: 3px solid #ffff;
 }
 .title{
     font-size: 50px;
@@ -64,7 +65,9 @@ body.bg-global{
 .operators{
     margin-top: 45px;
 }
-.operators button{
+.operators a{
+    text-align: center;
+    text-decoration: none;
     display: block;
     width: 100%;
     margin: 28px 0;
@@ -83,6 +86,9 @@ body.bg-global{
 }
 .operators #op3{
     background: linear-gradient(to left,#5CAC50, #16997D);
+}
+.operators #op4{
+    background: #E10A0A
 }
 
 @media screen and (max-width: 700px) {

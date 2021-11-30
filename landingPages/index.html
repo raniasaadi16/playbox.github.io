@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="add your title">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/landingpage.css">
-    <title>Document</title>
+    <title>Title</title>
 </head>
 <body class="bg-global" id="landingPage">
-    <div class="content" id="page2">
+    <div class="content" id="page1">
         <button type="button" id="language">ENGLISH</button>
         <div class="title text-center">
             <p id='init-title'>المتعة والإثارة مع أقوى الألعاب  الحصرية والجديدة بدون الحاجة للتحميل</p>
@@ -17,17 +22,15 @@
             <img class="img-box" src="./assets/images/Mask Group 1.png" alt="">
             <div class="text-box text-center">
                 <p class="title">PlayBox<span>service</span></p>
-                <div class="title text-center">
-                    <p id='init-title' class="init-mobile">المتعة والإثارة مع أقوى الألعاب  الحصرية والجديدة بدون الحاجة للتحميل</p>
-                </div>
-                <p id="subtitle2">أدخل رمز التفعيل</p>
+                <p id="subtitle">أدخل رقم الجـــوال</p>
                 <div class="input-icons">
-                    <form>
-                        <input type="text" placeholder="5XXXXXXXX">
+                    <form id="form" name="form">
+                        <input type="number" placeholder="Exemple  5XXXXXXXX" id='input'>
+                        <p id="validation-error">ارجو ان تدخل رقم</p>
                         <div class="icon">
                             <img src="./assets/images/Icon feather-smartphone.svg" alt="">
                         </div>
-                        <a href="success.html" type="submit">إرسال</a>
+                        <button href="activationCode.html" id="continue" type="submit">إستمر</button>
                     </form>
                 </div>
             </div>

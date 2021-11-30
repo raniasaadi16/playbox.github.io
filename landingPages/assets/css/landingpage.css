@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body,html{
+    min-height: 100%;
+}
 @font-face {
     font-family: Bahij-light;
     src: url('../fonts/Bahij_TheSansArabic-Light.ttf');
@@ -17,6 +20,9 @@
 }
 button{
     cursor: pointer;
+}
+input{
+    outline: none;
 }
 body.bg-global{
     background-image:url('../images/Group\ 1120.png') ;
@@ -46,7 +52,7 @@ body.bg-global{
     box-shadow: 0 3px 6px #ffffffde;
 }
 .title{
-    margin: 30px 0;
+    margin: 55px 0;
     font-size: 28px;
 }
 .text-center{
@@ -121,7 +127,7 @@ body.bg-global{
     width: 21px;
     height: 30px;
 }
-.input-icons a{
+.input-icons button{
     display: block;
     background-color: #4F0868;
     padding: 0;
@@ -133,8 +139,9 @@ body.bg-global{
     box-shadow: 0 0 8px #fff;
     font-family: Bahij-bold;
     font-size: 28px;
-    cursor: pointer;
-    text-decoration: none;
+}
+.input-icons #send{
+    background: linear-gradient(to right,#066580,#A800A8 );
 }
 #paragraph{
     margin-top: 30px;
@@ -143,7 +150,20 @@ body.bg-global{
     font-family: Bahij-light;
     font-size: 15px;
 }
-
+form:invalid input{
+    border: 2px solid red !important;
+}
+form:invalid #validation-error{
+    display: block !important;
+}
+form #validation-error{
+    display: none;
+    color: red;
+    text-align: start;
+    position: relative;
+    left: 10%;
+    width: max-content;
+}
 .check{
     position: relative;
 }
